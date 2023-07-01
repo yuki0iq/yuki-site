@@ -19,7 +19,7 @@
 				padding: .5em;
 			}
 
-			h1 {
+			h1, h2 {
 				text-align: center;
 			}
 
@@ -37,7 +37,7 @@
 	<body>
 		<h1 id="top">
 			I am
-			<em><abbr title="russian is Юки Сиренева. yes, this is my name">Yuki Sireneva</abbr></em>
+			<em><abbr title='russian is Юки Сиренева. syllable stress is "Юки сиРЕнева" (first name: first, last name: second). yes, this is my name'>Yuki Sireneva</abbr></em>
 			<sup><a href="https://pronouns.page/u/yuki_the_girl">she</a></sup>
 		</h1>
 
@@ -74,22 +74,25 @@
 
 
 		<table class="center" style="table-layout: fixed; width: 75%">
-			<caption> You may be interested in what I've written so far — my projects table </caption>
+			<caption>
+				You may be interested in what I've written so far — my projects table
+				<footer> Legend: total (+new !use ~edit_old) </footer>
+			</caption>
 			<tr>
 				<td id="t_win">
 					<i class="nf nf-md-microsoft_windows_classic"></i>
 					<a href="#win">winapi</a>
-					<sup> 10 </sup>
+					<sup> 6 </sup>
 				</td>
 				<td id="t_qt">
 					<img src="img/qt_logo.svg" alt="[Qt]" width="16px" height="auto">
 					<a href="#qt">qt</a>
-					<sup> 4 </sup>
+					<sup> 4 (~1) </sup>
 				</td>
 				<td id="t_cpp">
 					<i class="nf nf-custom-cpp"></i>
 					<a href="#cpp">c++</a>
-					<sup> 3 </sup>
+					<sup> 8 </sup>
 				</td>
 				<td id="t_rs">
 					<i class="nf nf-dev-rust"></i>
@@ -101,32 +104,32 @@
 				<td id="t_py">
 					<i class="nf nf-dev-python"></i>
 					<a href="#py">python</a>
-					<sup> 10 (+5) </sup>
+					<sup> 10 (+5 !2) </sup>
 				</td>
 				<td id="t_l_tw">
 					<i class="nf nf-md-arch"></i>
 					<a href="#l_tw">lin-tweaks</a>
-					<sup> 5 (+4) </sup>
+					<sup> 3 (+1) </sup>
 				</td>
 				<td id="t_w_tw">
 					<i class="nf nf-dev-windows"></i>
 					<a href="#w_tw">win-tweaks</a>
-					<sup> 5 </sup>
+					<sup> 2 </sup>
 				</td>
 				<td id="t_tex">
 					<i class="nf nf-seti-tex"></i>
 					<a href="#tex">tex, html</a>
-					<sup> 4 (+2) </sup>
+					<sup> 2 (+2 !1) </sup>
 				</td>
 			</tr>
-
 		</table>
 
-		<p> Something may be added here...
+		<p> Something may be added here... </p>
 
 		<hr>
-		
-		This project list is not yet written...
+	
+
+		<h2> My projects — the list is known to be incomplete </h2>
 
 		<ul>
 
@@ -135,6 +138,14 @@
 				
 				<ol>
 					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/cl-srv-winsock">cli-srv-winsock</a></em> <sup>May 2018</sup>.
+						Simple TCP client and server for WinSock
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/gdiplus-maze">gdiplus-maze</a></em> <sup>Jan 2018</sup>.
+						Maze game rewritten to allow drawng pictures over console window using GDI+. (Where are the wincon-maze, its linux version and qt-maze I managed to run on real Android??)
+					</li>
+					<li>
 						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/useless-tools-2019">useless-tools-2019</a></em> <sup>Jan 2019</sup>.
 						My first attempt to write something useful but it became useless from the start. Helper for school algebra and statistics with a simple js interpreter inside.
 						Plots through GDI directly to the screen and uses bare WinAPI
@@ -142,6 +153,10 @@
 					<li>
 						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/useless-tools-2020">useless-tools-2020</a></em> <sup>2020</sup>.
 						Something was rewritten since 2019 version: I've started migration from js to my own interpreter because js was extremely slow. Still plots through GDI and uses almost bare WinAPI
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/launcher">launcher</a></em> <sup>May 2020</sup>
+						Launch restricted process in terms of execution time and available RAM
 					</li>
 					<li>
 						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/useless-tools-2021">useless-tools-2021</a></em> <sup>Jun 2021</sup>.
@@ -157,10 +172,24 @@
 
 				<ol>
 					<li>
-						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/wordgame">wordgame</a></em> <sup>Sum 2018</sup>.
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/list-dirs">list-dirs</a></em> <sup>Dec 2017</sup>.
+						Simple <em>ls</em> and <em>dir</em> alternative. It is so simple that it lacks really useful features real commands have
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/wordgame">wordgame</a></em> <sup>Jun-Sep 2018</sup>.
 						I was too bored when I was on a vacation so that I've written a <a href="https://en.wikipedia.org/wiki/Shiritori">shiritori</a>-like game to play with myself.
 						<em>wggui</em> subproject is the GUI version which worked somewhat correctly that time.
 						<em>fsort</em> and <em>concat</em> were probably used for previous versions and I have no clue why were they still present in the source tree
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/qtgtsg">qtgtsg</a></em> <sup>Aug 2019</sup>.
+						A simple Qt-based telegram text sticker generator for stickers like in <a href="http://t.me/addstickers/ruosm">RuOSM telegram pack</a>
+						I wrote because I did not understand how were these stickers generated, but the general idea was simple.
+						Four years passed since then and now I have literally no idea what is going on there. <em>Skill issue</em>
+					</li>
+					<li>
+						<em><a href=https://git.yukii.keenetic.pro/yuki0iq/ej-client">ej-client</a></em> <sup>Aug 2020, Jun 2023</sup>.
+						Simple Qt-based console client for ejudge
 					</li>
 				</ol>
 			</li>
@@ -169,6 +198,38 @@
 				<h3 id="cpp"> my bare C++ projects <a href="#top">[top]</a> <a href="#t_cpp">[table]</a> </h2>
 				
 				<ol>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/bf-ext">bf-ext</a></em> <sup>Dec 2017</sup>.
+						Extended brainf-ck interpreter. Abandoned, but still extended
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/windows-defender">windows-defender</a></em> <sup>Jan 2018</sup>.
+						What is this and why did I write this? No one knows...
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/tcp-socket">tcp-socket</a></em> <sup>Feb 2018</sup>.
+						Cross-platform (at least I think so) TCP socket
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/net-xo">net-xo</a></em> <sup>Mar 2018</sup>.
+						Simple cross-platform tic-tac-toe game server and client
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/ini">ini</a></em> <sup>Mar 2018</sup>.
+						Simple INI reader and writer
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/udp-chat-test">udp-chat-test</a></em> <sup>Apr 2018</sup>.
+						Simple cross-platform UDP chat
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/console-test">console-test</a></em> <sup>Apr 2018</sup>.
+						Simple 16-color console for windows and linux
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/objection-lol-helper">objection-lol-helper</a></em> <sup>Dec 2020</sup>.
+						Simple converter from text to objection.lol exported objection. Became useless a month later when they added custom characters support
+					</li>
 				</ol>
 			</li>
 
@@ -191,6 +252,24 @@
 				<h3 id="py"> my Python projects <a href="#top">[top]</a> <a href="#t_py">[table]</a> </h2>
 				
 				<ol>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/read">read</a></em> <sup>Oct 2020</sup>.
+						I was too lazy to read <em>The Storm</em> by Alexander Ostrovskiy so I wrote a text splitter to split it into "equal" lines
+						and a text shower to show them one by one to "view" the play in question. I have never used it, nor did I eventually read it
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/alterpy">alterpy</a></em> <sup>Jan-Jun 2023</sup>.
+						Home for everything I thought was a good idea to implement and it was not painfully hard.
+						<a href="https://alterpy_bot.t.me">Telegram bot</a> to replace <a href="https://forkpy_bot.t.me">forkpy</a>,
+						<a href="https://vk.com/catpy">catpy</a> and <a href="https://iris_cm_bot.t.me">Iris Chat Manager</a>.
+						Note that <em>textwrap</em>, <em>aiospeller</em>, <em>aiobalaboba</em> in <em>utils</em> and probably much more code is reusable,
+						but still "burnt" into AlterPy. This is because I am too lazy to split it onto pieces
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/girlposter">girlposter</a></em> <sup>May 2023</sup>.
+						Simple reddit RSS to telegram forwarder set up to send girls to <a href="https://gitlposter.t.me">a telegram channel</a>
+						under <a href="https://girlposter_bot.t.me">bot account</a>
+					</li>
 					<li>
 						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/replacer">replacer</a></em> <sup>Jun 2023</sup>.
 						Ripgrep is beautiful except that it can not apply replaces to files. Fallbacking to grep and sed was never a valid option
@@ -216,7 +295,7 @@
 				<ol>
 					<li>
 						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/cygdotfiles">cygdotfiles</a></em> <sup>2021</sup>. [Replaced by <em>dotfiles</em>].
-						dotfiles I've used when I was using <strong>Cygwin</strong> across some of my devices (even on windows xp!)
+						dotfiles I've used when I was using Cygwin across some of my devices (even on windows xp!)
 					</li>
 					<li>
 						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/bash-status-line">bash-status-line</a></em> <sup>Jun 2023</sup>.
@@ -254,28 +333,22 @@
 				<h3 id="tex"> my LaTeX and html files <a href="#top">[top]</a> <a href="#t_tex">[table]</a> </h3>
 
 				<ol>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/state-exam">state-exam</a></em> <sup>Jun 2023</sup>.
+						I was challenged to write a EGE-like template for latex and abandoned the idea on the next day. <em>Who could've guessed, right?</em>
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/site">site</a></em> <sup>Jul 2023</sup>.
+						Source code for this site, which is hosted on my old laptop with arch btw
+					</li>
 				</ol>
 			</li>
 		</ul>
 
-		<hr>
+		<p> Not found: wincon-maze, qt-maze, qt-snake, qt-net1000, qt-tester, wincon-updown, generals-tournament, generals-visual,
+		fwd-yap-bot, what-to-solve-bot, yukipy, mbti-test, tex-summer-homework-8, tex-yume, irr-worm and many others </p>
 
-		This will probably be deleted soon... <br> 
-
-		[wip] add projects list (and link to gitea); highlight maintenance status with _something_<br>
-
-		UNFORMATTED AREA OF TODO proceed with caution ↓<br>
-
-		telegram channels: mt19937_64, utk8g, girlposter, fwd_yap<br>
-
-		something about projects (what a wall of text, there is only 40, i think, why does this list look so big)<br>
-
-		supported: yuki-site, bash-status-line, dotfiles, alterpy, girlposter<br>
-		maintained: ej-client, qtgtsg, launcher, wordgame, net-xo, useless-tools<br>
-		just small: http0, guessing_game, win10-tweaks, kbsw, board, replacer, list-dirs, udp-chat-test, console-test, ini, net-xo, cl-srv, bfext, windows-defender, objection-lol-helper, <br>
-		abandoned: state-exam, yuki0iq.github.io<br>
-		old: cygdotfiles, tcp-socket, console-as-gui, gdiplus-maze, generals<br>
-		unpublished: updown/2017, maze/2017, tgen_what2solve/2019, tester/2020<br>
+		<p> Not listed: std-chrono, std-horny, std-nikki, std-forward </p>
 
 		<footer>
 			<hr>
