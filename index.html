@@ -134,8 +134,21 @@
 				<h3 id="win"> my WinAPI-related projects <a href="#top">[top]</a> <a href="#t_win">[table]</a> </h2>
 				
 				<ol>
-					<li> test </li>
-					<li> kek </li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/useless-tools-2019">useless-tools-2019</a></em> <sup>Jan 2019</sup>.
+						My first attempt to write something useful but it became useless from the start. Helper for school algebra and statistics with a simple js interpreter inside.
+						Plots through GDI directly to the screen and uses bare WinAPI
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/useless-tools-2020">useless-tools-2020</a></em> <sup>2020</sup>.
+						Something was rewritten since 2019 version: I've started migration from js to my own interpreter because js was extremely slow. Still plots through GDI and uses almost bare WinAPI
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/useless-tools-2021">useless-tools-2021</a></em> <sup>Jun 2021</sup>.
+						Added some wrappers around WinAPI, added "plot thread" and made useless-tools almost usable, with "math notation" parser.
+						This version does not use console for input and settings and lacks some of 2020 (or 2019) features because it was a rewrite to GUI.
+						Getting text out of dialog controls in WinAPI is a pain greater than the one sinners feel in the hell
+					</li>
 				</ol>
 			</li>
 		
@@ -143,6 +156,12 @@
 				<h3 id="qt"> my Qt-related projects <a href="#top">[top]</a> <a href="#t_qt">[table]</a> </h2>
 
 				<ol>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/wordgame">wordgame</a></em> <sup>Sum 2018</sup>.
+						I was too bored when I was on a vacation so that I've written a <a href="https://en.wikipedia.org/wiki/Shiritori">shiritori</a>-like game to play with myself.
+						<em>wggui</em> subproject is the GUI version which worked somewhat correctly that time.
+						<em>fsort</em> and <em>concat</em> were probably used for previous versions and I have no clue why were they still present in the source tree
+					</li>
 				</ol>
 			</li>
 
@@ -172,6 +191,22 @@
 				<h3 id="py"> my Python projects <a href="#top">[top]</a> <a href="#t_py">[table]</a> </h2>
 				
 				<ol>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/replacer">replacer</a></em> <sup>Jun 2023</sup>.
+						Ripgrep is beautiful except that it can not apply replaces to files. Fallbacking to grep and sed was never a valid option
+						and I wrote my simple "Find and Replace in files". It is highly likely to be very unoptimized, because I did not have
+						an intention to write rg replacement — I have instead written straightforward and dumb code that just worked.
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/board">board</a></em> <sup>Jun 2023</sup>.
+						I was told to fiddle with flask/quart and write something simple to prove my ability to write. Simple write-only "board"
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/http0">http0</a></em> <sup>Jun 2023</sup>.
+						The next day I've noticed that there is an extremely simple HTTP/0.9 protocol (if seen from server side)
+						and spent one evening to write a simple asyncio implementation. I believe my code is RFC-compliant, though I can't be 100% sure.
+						I have also tried to write HTTP/1.0 server and even somewhat succeeded, but it is only a proof-of-concept and extremely unusable in real life
+					</li>
 				</ol>
 			</li>
 
@@ -179,6 +214,20 @@
 				<h3 id="l_tw"> my Linux tweaks (may be Arch specific) <a href="#top">[top]</a> <a href="#t_l_tw">[table]</a> </h3>
 
 				<ol>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/cygdotfiles">cygdotfiles</a></em> <sup>2021</sup>. [Replaced by <em>dotfiles</em>].
+						dotfiles I've used when I was using <strong>Cygwin</strong> across some of my devices (even on windows xp!)
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/bash-status-line">bash-status-line</a></em> <sup>Jun 2023</sup>.
+						Extended bash status line written in bash.
+						<em>A fork of <a href="https://github.com/purplesyringa/shell">purplesyringa/shell</a> with my enhancements (I've sent some PRs)</em>
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/dotfiles">dotfiles</a></em> <sup>Jun 2023</sup>.
+						I thought that using unified environment is cool and tried to write something to create it.
+						Includes <em>bash-status-line</em> and some useful vim plugins though I don't use them while writing this because I forgot to install AUR helper
+					</li>
 				</ol>
 			</li>
 
@@ -186,6 +235,18 @@
 				<h3 id="w_tw"> my Windows tweaks <a href="#top">[top]</a> <a href="#t_w_tw">[table]</a> </h3>
 				
 				<ol>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/win10-tweaks">win10-tweaks</a></em> <sup>2016</sup>.
+						After moving to Windows 10 from older versions, I noticed that it was too "different" from what I was used to and
+						I found some registry scripts to bring back at least some of the user experience I've lost with updating
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/kbsw">kbsw</a></em> <sup>Feb 2022</sup>.
+						Windows 7 does <em>not</em> support Win+Space layout switching by default so I've written an AutoHotkey script to compensate this deficiency.
+						First prototype was written in C++ and was based on DLL hijacking to catch hotkeys globally.
+						Unfortunately, I could not receive Win key events and I was too lazy to investigate this more so that I gave up on this idea and started finding workarounds.
+						This script was originally published in <a href="https://t.me/mt19937_64/785">my meme telegram channel</a>, and I don't exactly know why
+					</li>
 				</ol>
 			</li>
 
