@@ -81,12 +81,12 @@
 			<tr>
 				<td id="t_w_g">
 					<i class="nf nf-md-microsoft_windows_classic"></i>
-					<a href="#w_g">winapi-gui</a>
+					<a href="#w_g">winapi</a>
 					<sup> 6 </sup>
 				</td>
 				<td id="t_w_c">
 					<i class="nf nf-cod-terminal_cmd"></i>
-					<a href="#w_c">winapi-con</a>
+					<a href="#w_c">winconsole</a>
 					<sup> 6 </sup>
 				</td>
 				<td id="t_qt">
@@ -103,7 +103,7 @@
 			<tr>
 				<td id="t_a_py">
 					<i class="nf nf-dev-python"></i>
-					<a href="#py">asyncio python</a>
+					<a href="#py">telethon+quart</a>
 					<sup> 6 (+5 !2) </sup>
 				</td>
 				<td id="t_b_py">
@@ -156,7 +156,7 @@
 		<ul>
 
 			<li>
-				<h3 id="win"> my WinAPI-related GUI projects <a href="#top">[top]</a> <a href="#t_win">[table]</a> </h2>
+				<h3 id="w_g"> my WinAPI-related GUI projects <a href="#top">[top]</a> <a href="#t_w_g">[table]</a> </h2>
 				
 				<ol>
 					<li>
@@ -177,14 +177,29 @@
 						Something was rewritten since 2019 version: I've started migration from js to my own interpreter because js was extremely slow. Still plots through GDI and uses almost bare WinAPI
 					</li>
 					<li>
-						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/launcher">launcher</a></em> <sup>May 2020</sup>
-						Launch restricted process in terms of execution time and available RAM
-					</li>
-					<li>
 						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/useless-tools-2021">useless-tools-2021</a></em> <sup>Jun 2021</sup>.
 						Added some wrappers around WinAPI, added "plot thread" and made useless-tools almost usable, with "math notation" parser.
 						This version does not use console for input and settings and lacks some of 2020 (or 2019) features because it was a rewrite to GUI.
 						Getting text out of dialog controls in WinAPI is a pain greater than the one sinners feel in the hell
+					</li>
+				</ol>
+			</li>
+
+			<li>
+				<h3 id="t_w_c"> my WinAPI-only console projects <a href="#top">[top]</a> <a href="#t_w_c">[table]</a> </h3>
+
+				<ol>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/windows-defender">windows-defender</a></em> <sup>Jan 2018</sup>.
+						What is this and why did I write this? No one knows...
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/cl-srv-winsock">cli-srv-winsock</a></em> <sup>May 2018</sup>.
+						Simple TCP client and server for WinSock
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/launcher">launcher</a></em> <sup>May 2020</sup>
+						Launch restricted process in terms of execution time and available RAM
 					</li>
 				</ol>
 			</li>
@@ -225,10 +240,6 @@
 						Extended brainf-ck interpreter. Abandoned, but still extended
 					</li>
 					<li>
-						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/windows-defender">windows-defender</a></em> <sup>Jan 2018</sup>.
-						What is this and why did I write this? No one knows...
-					</li>
-					<li>
 						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/tcp-socket">tcp-socket</a></em> <sup>Feb 2018</sup>.
 						Cross-platform (at least I think so) TCP socket
 					</li>
@@ -239,10 +250,6 @@
 					<li>
 						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/ini">ini</a></em> <sup>Mar 2018</sup>.
 						Simple INI reader and writer
-					</li>
-					<li>
-						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/cl-srv-winsock">cli-srv-winsock</a></em> <sup>May 2018</sup>.
-						Simple TCP client and server for WinSock
 					</li>
 					<li>
 						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/udp-chat-test">udp-chat-test</a></em> <sup>Apr 2018</sup>.
@@ -260,29 +267,9 @@
 			</li>
 
 			<li>
-				<h3 id="rs"> my Rust projects <a href="#top">[top]</a> <a href="#t_rs">[table]</a> </h2>
-
-				<ol>
-					<li>
-						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/guessing-game">guessing game</a></em> <sup>Jun 2023</sup>.
-						Simple "greater/lesser" guess-a-number game, rewritten from rust book
-					</li>
-					<li>
-						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/tconv">tconv</a></em> <sup>Jun 2023</sup>.
-						Simple Farenheit to Celsius converter and back; can calculate fibonacci number using simple O(n) algo
-					</li>
-				</ol>
-			</li>
-
-			<li>
-				<h3 id="py"> my Python projects <a href="#top">[top]</a> <a href="#t_py">[table]</a> </h2>
+				<h3 id="a_py"> my telethon and quart Python projects <a href="#top">[top]</a> <a href="#t_a_py">[table]</a> </h2>
 				
 				<ol>
-					<li>
-						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/read">read</a></em> <sup>Oct 2020</sup>.
-						I was too lazy to read <em>The Storm</em> by Alexander Ostrovskiy so I wrote a text splitter to split it into "equal" lines
-						and a text shower to show them one by one to "view" the play in question. I have never used it, nor did I eventually read it
-					</li>
 					<li>
 						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/alterpy">alterpy</a></em> <sup>Jan-Jun 2023</sup>.
 						Home for everything I thought was a good idea to implement and it was not painfully hard.
@@ -297,14 +284,26 @@
 						under <a href="https://girlposter_bot.t.me">bot account</a>
 					</li>
 					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/board">board</a></em> <sup>Jun 2023</sup>.
+						I was told to fiddle with flask/quart and write something simple to prove my ability to write. Simple write-only "board"
+					</li>
+				</ol>
+			</li>
+
+			<li>
+				<h3 id="b_py"> my bare Python projects <a href="#top">[top]</a> <a href="#t_b_py">[table]</a> </h2>
+
+				<ol>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/read">read</a></em> <sup>Oct 2020</sup>.
+						I was too lazy to read <em>The Storm</em> by Alexander Ostrovskiy so I wrote a text splitter to split it into "equal" lines
+						and a text shower to show them one by one to "view" the play in question. I have never used it, nor did I eventually read it
+					</li>
+					<li>
 						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/replacer">replacer</a></em> <sup>Jun 2023</sup>.
 						Ripgrep is beautiful except that it can not apply replaces to files. Fallbacking to grep and sed was never a valid option
 						and I wrote my simple "Find and Replace in files". It is highly likely to be very unoptimized, because I did not have
 						an intention to write rg replacement — I have instead written straightforward and dumb code that just worked.
-					</li>
-					<li>
-						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/board">board</a></em> <sup>Jun 2023</sup>.
-						I was told to fiddle with flask/quart and write something simple to prove my ability to write. Simple write-only "board"
 					</li>
 					<li>
 						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/http0">http0</a></em> <sup>Jun 2023</sup>.
@@ -356,6 +355,21 @@
 			</li>
 
 			<li>
+				<h3 id="rs"> my Rust projects <a href="#top">[top]</a> <a href="#t_rs">[table]</a> </h2>
+
+				<ol>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/guessing-game">guessing game</a></em> <sup>Jun 2023</sup>.
+						Simple "greater/lesser" guess-a-number game, rewritten from rust book
+					</li>
+					<li>
+						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/tconv">tconv</a></em> <sup>Jun 2023</sup>.
+						Simple Farenheit to Celsius converter and back; can calculate fibonacci number using simple O(n) algo
+					</li>
+				</ol>
+			</li>
+
+			<li>
 				<h3 id="tex"> my LaTeX and html files <a href="#top">[top]</a> <a href="#t_tex">[table]</a> </h3>
 
 				<ol>
@@ -363,10 +377,29 @@
 						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/state-exam">state-exam</a></em> <sup>Jun 2023</sup>.
 						I was challenged to write a EGE-like template for latex and abandoned the idea on the next day. <em>Who could've guessed, right?</em>
 					</li>
+				</ol>
+			</li>
+
+			<li>
+				<h3 id="html"> my html files <a href="#top">[top]</a> <a href="#t_html">[table]</a> </h3>
+
+				<ol>
 					<li>
 						<em><a href="https://git.yukii.keenetic.pro/yuki0iq/site">site</a></em> <sup>Jul 2023</sup>.
 						Source code for this site, which is hosted on my old laptop with arch btw
 					</li>
+				</ol>
+			</li>
+
+
+			<li>
+				<h3 id="tg"> my telegram channels <a href="#top">[top]</a> <a href="#t_tg">[table]</a> </h3>
+
+				<ol>
+					<li> std-chrono from Jan 2022 </li>
+					<li> std-nikki from Jul 2022 </li>
+					<li> std-forward from Aug 2022 </li>
+					<li> std-horny from May 2023 </li>
 				</ol>
 			</li>
 		</ul>
@@ -374,7 +407,7 @@
 		<p> Not found: wincon-maze, qt-maze, qt-snake, qt-net1000, qt-tester, wincon-updown, generals-tournament, generals-visual,
 		fwd-yap-bot, what-to-solve-bot, yukipy, mbti-test, tex-summer-homework-8, tex-yume, irr-worm and many others </p>
 
-		<p> Not listed: std-chrono, std-horny, std-nikki, std-forward </p>
+		<p> Not described: std-chrono, std-horny, std-nikki, std-forward </p>
 
 		<footer>
 			<hr>
